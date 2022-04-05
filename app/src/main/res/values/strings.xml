@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">VSE</string>
+    <string name="merc">Mercedes-Benz</string>
+    <string name="bmw">BMW</string>
+    <string name="audi">AUDI</string>
+
+</resources>
