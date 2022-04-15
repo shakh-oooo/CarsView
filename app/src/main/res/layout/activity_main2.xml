@@ -8,29 +8,293 @@
 
     <LinearLayout
         android:id="@+id/linearLayout"
-        android:layout_width="match_parent"
-        android:layout_height="300dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent">
 
         <ImageView
+            android:id="@+id/image_m"
             android:layout_width="match_parent"
-            android:layout_height="match_parent"
-            android:adjustViewBounds="true"
+            android:layout_height="350dp"
             android:scaleType="centerCrop"
-            app:srcCompat="@drawable/merc1" />
+             />
     </LinearLayout>
 
-    <androidx.cardview.widget.CardView
-        android:id="@+id/card"
+    <ScrollView
+        android:id="@+id/scrollView2"
         android:layout_width="match_parent"
-        android:layout_height="0dp"
-        app:cardCornerRadius="20dp"
-        android:backgroundTint="@color/teal_700"
+        android:layout_height="match_parent"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@id/linearLayout" />
+        app:layout_constraintTop_toTopOf="parent"
+        tools:ignore="SpeakableTextPresentCheck">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="315dp" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/sss"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:paddingEnd="15dp"
+                    android:paddingStart="15dp"
+                    android:orientation="horizontal">
+
+                    <androidx.cardview.widget.CardView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="15dp"
+                        android:backgroundTint="#C6C5BC"
+                        app:cardCornerRadius="40dp">
+
+                    <TextView
+                        android:id="@+id/izmenit_imya_main"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textSize="30sp"
+                        android:text="@string/merc_main"
+                        android:textStyle="bold"
+                        android:layout_marginStart="25dp"
+                        />
+                    <TextView
+                        android:id="@+id/izmenit_imya_dop"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="end"
+                        android:layout_marginEnd="25dp"
+                        android:textSize="30sp"
+                        android:text="@string/merc1"
+                        android:textStyle="italic"/>
+
+
+                    </androidx.cardview.widget.CardView>
+
+                </LinearLayout>
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical"
+                        android:layout_weight="1">
+                        <TextView
+                            android:id="@+id/moshnost"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="@string/moshnost"
+                            android:textSize="30sp"
+                            android:layout_marginTop="20dp"
+                            android:layout_marginStart="10dp"/>
+                        <TextView
+                            android:id="@+id/obyem"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="@string/obyem"
+                            android:textSize="30sp"
+                            android:layout_marginTop="20dp"
+                            android:layout_marginStart="10dp"/>
+                        <TextView
+                            android:id="@+id/privod"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="@string/privod"
+                            android:textSize="30sp"
+                            android:layout_marginTop="20dp"
+                            android:layout_marginStart="10dp"/>
+                        <TextView
+                            android:id="@+id/rasxod"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="@string/rasxod"
+                            android:textSize="30sp"
+                            android:layout_marginTop="20dp"
+                            android:layout_marginStart="10dp"/>
+                        <TextView
+                            android:id="@+id/god_vipuska"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="@string/god_vipuska"
+                            android:textSize="30sp"
+                            android:layout_marginTop="20dp"
+                            android:layout_marginStart="10dp"/>
+                        <TextView
+                            android:id="@+id/klirens"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="@string/klirens"
+                            android:textSize="30sp"
+                            android:layout_marginTop="20dp"
+                            android:layout_marginStart="10dp"/>
+                        <TextView
+                            android:id="@+id/sena"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="@string/sena"
+                            android:textSize="30sp"
+                            android:layout_marginTop="20dp"
+                            android:layout_marginStart="10dp"/>
+                    </LinearLayout>
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical"
+                        android:gravity="end"
+                        android:paddingEnd="10dp"
+                        android:layout_weight="1">
+                        <TextView
+                            android:id="@+id/moshnost_otv"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Мощность"
+                            android:textSize="30sp"
+                            android:layout_marginTop="20dp"
+                            android:layout_marginStart="10dp"/>
+                        <TextView
+                            android:id="@+id/obyem_otv"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Объем"
+                            android:textSize="30sp"
+                            android:layout_marginTop="20dp"
+                            android:layout_marginStart="10dp"/>
+                        <TextView
+                            android:id="@+id/privod_otv"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Привод"
+                            android:textSize="30sp"
+                            android:layout_marginTop="20dp"
+                            android:layout_marginStart="10dp"/>
+                        <TextView
+                            android:id="@+id/rasxod_otv"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Расход"
+                            android:textSize="30sp"
+                            android:layout_marginTop="20dp"
+                            android:layout_marginStart="10dp"/>
+                        <TextView
+                            android:id="@+id/god_vipuska_otv"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="2018"
+                            android:textSize="30sp"
+                            android:layout_marginTop="20dp"
+                            android:layout_marginStart="10dp"/>
+                        <TextView
+                            android:id="@+id/klirens_otv"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Клиренс"
+                            android:textSize="30sp"
+                            android:layout_marginTop="20dp"
+                            android:layout_marginStart="10dp"/>
+                        <TextView
+                            android:id="@+id/sena_otv"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Цена"
+                            android:textSize="30sp"
+                            android:layout_marginTop="20dp"
+                            android:layout_marginStart="10dp"/>
+
+
+
+                    </LinearLayout>
+                </LinearLayout>
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/poxojie_mashini"
+                    android:gravity="center"
+                    android:textSize="30sp"
+                    android:layout_marginBottom="10dp"
+                    android:layout_marginTop="20dp"
+                    />
+
+                     <androidx.cardview.widget.CardView
+                     android:layout_width="match_parent"
+                     android:layout_height="wrap_content"
+                     android:layout_marginEnd="10dp"
+                     android:layout_marginStart="10dp"
+                     app:cardCornerRadius="20dp"
+                     android:layout_marginTop="10dp"
+                     android:layout_marginBottom="5dp"
+                     android:backgroundTint="@color/teal_700">
+
+                     <androidx.cardview.widget.CardView
+                         android:layout_width="wrap_content"
+                         android:layout_height="wrap_content"
+                         android:layout_margin="5dp"
+                         app:cardCornerRadius="20dp"
+                         android:backgroundTint="@color/purple_200">
+                         <ImageView
+                             android:layout_width="100dp"
+                             android:padding="10dp"
+                             android:layout_height="100dp"
+                             android:src="@drawable/mercedes"/>
+                     </androidx.cardview.widget.CardView>
+                     <androidx.cardview.widget.CardView
+                         android:layout_width="wrap_content"
+                         android:layout_height="wrap_content"
+                         android:layout_margin="5dp"
+                         app:cardCornerRadius="20dp"
+                         android:layout_gravity="center"
+                         android:backgroundTint="@color/purple_200">
+                         <ImageView
+                             android:layout_width="100dp"
+                             android:padding="10dp"
+                             android:layout_height="100dp"
+                             android:src="@drawable/bmw"/>
+                     </androidx.cardview.widget.CardView>
+                     <androidx.cardview.widget.CardView
+                         android:layout_width="wrap_content"
+                         android:layout_height="wrap_content"
+                         android:layout_margin="5dp"
+                         app:cardCornerRadius="20dp"
+                         android:layout_gravity="end"
+                         android:backgroundTint="@color/purple_200">
+                         <ImageView
+                             android:layout_width="100dp"
+                             android:layout_height="100dp"
+                             android:padding="10dp"
+                             android:src="@drawable/audi"/>
+                     </androidx.cardview.widget.CardView>
+
+
+
+                 </androidx.cardview.widget.CardView>
+
+                </LinearLayout>
+
+
+
+
+
+            </LinearLayout>
+        </LinearLayout>
+
+    </ScrollView>
+
 
 </androidx.constraintlayout.widget.ConstraintLayout>

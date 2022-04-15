@@ -1,7 +1,62 @@
 <resources>
     <string name="app_name">VSE</string>
-    <string name="merc">Mercedes-Benz</string>
-    <string name="bmw">BMW</string>
-    <string name="audi">AUDI</string>
+    <string name="merc_main">Mercedes-Benz</string>
+    <string name="bmw_main">BMW</string>
+    <string name="audi_main">AUDI</string>
+
+    <!--merc name 2-->
+    <string name="merc1">AMG GT</string>
+    <string name="merc2">EQS 1gen</string>
+    <string name="merc3">S-class 8gen</string>
+
+    <!--bmw name-->
+    <string name="bmw1">1 series</string>
+    <string name="bmw2">M4</string>
+    <string name="bmw3">X5</string>
+
+    <!--audi name-->
+    <string name="audi1">RS4</string>
+    <string name="audi2">A6</string>
+    <string name="audi3">SQ8</string>
+
+    <!--activity 2-->
+    <string name="moshnost">Мощность</string>
+    <string name="obyem">Объем</string>
+    <string name="privod">Привод</string>
+    <string name="rasxod">Расход</string>
+    <string name="god_vipuska">Год выпуска</string>
+    <string name="klirens">Клиренс</string>
+    <string name="sena">Цена</string>
+
+    <string name="poxojie_mashini">Похожые машины</string>
+
+
+    <!--mercedes 1-->
+    <string name="M1_moshnost_otv">476 л.с</string>
+    <string name="M1_obyem_otv">4.0 л</string>
+    <string name="M1_privod_otv">Задний</string>
+    <string name="M1_rasxod_otv">7,9/12,5</string>
+    <string name="M1_god_vipuska_otv">2014</string>
+    <string name="M1_klirens_otv">10см</string>
+    <string name="M1_sena_otv">115$к</string>
+
+    <!--mercedes 2-->
+    <string name="M2_moshnost_otv">346 л.с</string>
+    <string name="M2_obyem_otv">None</string>
+    <string name="M2_privod_otv">Задний</string>
+    <string name="M2_rasxod_otv">None</string>
+    <string name="M2_god_vipuska_otv">2021</string>
+    <string name="M2_klirens_otv">14см</string>
+    <string name="M2_sena_otv">120$к</string>
+
+    <!--mercedes 3-->
+    <string name="M3_moshnost_otv">500 л.с</string>
+    <string name="M3_obyem_otv">4.3 л</string>
+    <string name="M3_privod_otv">Задний</string>
+    <string name="M3_rasxod_otv">7,9/12,5</string>
+    <string name="M3_god_vipuska_otv">2020</string>
+    <string name="M3_klirens_otv">14см</string>
+    <string name="M3_sena_otv">220$к</string>
+    <string name="hello_blank_fragment">Hello blank fragment</string>
 
 </resources>

@@ -4,33 +4,36 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="#C65E5E"
     tools:context=".MainActivity">
 
 
     <ScrollView
-        android:id="@+id/scrol"
+        android:id="@+id/scrol1"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
+        android:background="@color/purple_200"
         android:orientation="vertical"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" >
+        app:layout_constraintTop_toTopOf="parent">
 
 
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:orientation="vertical"
-            android:background="@color/purple_200">
+            android:background="@color/purple_200"
+            android:orientation="vertical">
+
             <androidx.appcompat.widget.Toolbar
                 android:id="@+id/toolbar"
-                app:title="@string/app_name"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:background="@color/purple_200"
                 android:minHeight="?attr/actionBarSize"
-                android:theme="?attr/actionBarTheme" />
+                android:theme="?attr/actionBarTheme"
+                app:title="@string/app_name" />
 
             <androidx.cardview.widget.CardView
                 android:layout_width="match_parent"
@@ -51,13 +54,13 @@
                         android:layout_gravity="center"
                         android:layout_weight="1"
                         android:gravity="center"
-                        android:text="@string/merc"
+                        android:text="@string/merc_main"
                         android:textSize="20sp" />
 
                     <ImageView
-                        android:id="@+id/img1111"
+                        android:id="@+id/mercMain"
                         android:layout_width="wrap_content"
-                        android:layout_height="200dp"
+                        android:layout_height="150dp"
                         android:layout_margin="5dp"
                         android:layout_weight="1"
                         app:srcCompat="@drawable/mercedes" />
@@ -72,7 +75,7 @@
                 android:layout_height="wrap_content"
                 android:animateLayoutChanges="true"
                 android:orientation="horizontal"
-                android:visibility="visible">
+                android:visibility="gone">
 
                 <HorizontalScrollView
                     android:layout_width="fill_parent"
@@ -90,31 +93,17 @@
                             android:layout_margin="10dp"
                             app:cardCornerRadius="10dp">
 
-                            <LinearLayout
-                                android:layout_width="wrap_content"
-                                android:layout_height="wrap_content"
-                                android:layout_margin="2dp"
-                                android:orientation="vertical">
 
-                                <TextView
+                            <TextView
+                                android:id="@+id/merc1_txt"
+                                android:layout_width="250dp"
+                                android:layout_height="200dp"
+                                android:layout_gravity="center"
+                                android:gravity="center"
+                                android:text="@string/merc1"
+                                android:textSize="60sp"
+                                android:textStyle="bold" />
 
-                                    android:layout_width="wrap_content"
-                                    android:layout_height="wrap_content"
-                                    android:layout_gravity="center"
-                                    android:layout_weight="1"
-                                    android:gravity="center"
-                                    android:text="TextView"
-                                    android:textSize="20sp" />
-
-                                <ImageView
-                                    android:id="@+id/dochImg1111"
-                                    android:layout_width="300dp"
-                                    android:layout_height="200dp"
-                                    android:layout_margin="5dp"
-                                    android:layout_weight="1"
-                                    android:onClick="YYY"
-                                    app:srcCompat="@drawable/ferari" />
-                            </LinearLayout>
 
                         </androidx.cardview.widget.CardView>
 
@@ -124,29 +113,17 @@
                             android:layout_margin="10dp"
                             app:cardCornerRadius="10dp">
 
-                            <LinearLayout
-                                android:layout_width="wrap_content"
-                                android:layout_height="wrap_content"
-                                android:layout_margin="2dp"
-                                android:orientation="vertical">
 
-                                <TextView
+                            <TextView
+                                android:id="@+id/merc2_txt"
+                                android:layout_width="250dp"
+                                android:layout_height="200dp"
+                                android:layout_gravity="center"
+                                android:gravity="center"
+                                android:text="@string/merc2"
+                                android:textSize="60sp"
+                                android:textStyle="bold" />
 
-                                    android:layout_width="wrap_content"
-                                    android:layout_height="wrap_content"
-                                    android:layout_gravity="center"
-                                    android:layout_weight="1"
-                                    android:gravity="center"
-                                    android:text="TextView"
-                                    android:textSize="20sp" />
-
-                                <ImageView
-                                    android:layout_width="300dp"
-                                    android:layout_height="200dp"
-                                    android:layout_margin="5dp"
-                                    android:layout_weight="1"
-                                    app:srcCompat="@drawable/ferari" />
-                            </LinearLayout>
 
                         </androidx.cardview.widget.CardView>
 
@@ -156,30 +133,15 @@
                             android:layout_margin="10dp"
                             app:cardCornerRadius="10dp">
 
-                            <LinearLayout
-                                android:layout_width="wrap_content"
-                                android:layout_height="wrap_content"
-                                android:layout_margin="2dp"
-                                android:orientation="vertical">
-
-                                <TextView
-
-                                    android:layout_width="wrap_content"
-                                    android:layout_height="wrap_content"
-                                    android:layout_gravity="center"
-                                    android:layout_weight="1"
-                                    android:gravity="center"
-                                    android:text="TextView"
-                                    android:textSize="20sp" />
-
-                                <ImageView
-                                    android:layout_width="300dp"
-                                    android:layout_height="200dp"
-                                    android:layout_margin="5dp"
-                                    android:layout_weight="1"
-                                    app:srcCompat="@drawable/ferari" />
-                            </LinearLayout>
-
+                            <TextView
+                                android:id="@+id/merc3_txt"
+                                android:layout_width="250dp"
+                                android:layout_height="200dp"
+                                android:layout_gravity="center"
+                                android:gravity="center"
+                                android:text="@string/merc3"
+                                android:textSize="60sp"
+                                android:textStyle="bold" />
                         </androidx.cardview.widget.CardView>
                     </LinearLayout>
                 </HorizontalScrollView>
@@ -205,25 +167,26 @@
                         android:layout_gravity="center"
                         android:layout_weight="1"
                         android:gravity="center"
-                        android:text="@string/bmw"
+                        android:text="@string/bmw_main"
                         android:textSize="20sp" />
 
                     <ImageView
-                        android:id="@+id/img2222"
+                        android:id="@+id/bmwMain"
                         android:layout_width="wrap_content"
-                        android:layout_height="200dp"
+                        android:layout_height="150dp"
                         android:layout_margin="5dp"
                         android:layout_weight="1"
                         app:srcCompat="@drawable/bmw" />
                 </LinearLayout>
 
             </androidx.cardview.widget.CardView>
-            <LinearLayout
-                android:animateLayoutChanges="true"
-                android:id="@+id/linner2222"
 
+            <LinearLayout
+                android:id="@+id/linner2222"
                 android:layout_width="wrap_content"
+
                 android:layout_height="wrap_content"
+                android:animateLayoutChanges="true"
                 android:orientation="horizontal"
                 android:visibility="gone">
 
@@ -243,29 +206,16 @@
                             android:layout_margin="10dp"
                             app:cardCornerRadius="10dp">
 
-                            <LinearLayout
-                                android:layout_width="wrap_content"
-                                android:layout_height="wrap_content"
-                                android:layout_margin="2dp"
-                                android:orientation="vertical">
+                            <TextView
+                                android:id="@+id/bmw1_txt"
+                                android:layout_width="250dp"
+                                android:layout_height="200dp"
+                                android:layout_gravity="center"
+                                android:gravity="center"
+                                android:text="@string/bmw1"
+                                android:textSize="60sp"
+                                android:textStyle="bold" />
 
-                                <TextView
-
-                                    android:layout_width="wrap_content"
-                                    android:layout_height="wrap_content"
-                                    android:layout_gravity="center"
-                                    android:layout_weight="1"
-                                    android:gravity="center"
-                                    android:text="TextView"
-                                    android:textSize="20sp" />
-
-                                <ImageView
-                                    android:layout_width="300dp"
-                                    android:layout_height="200dp"
-                                    android:layout_margin="5dp"
-                                    android:layout_weight="1"
-                                    app:srcCompat="@drawable/ferari" />
-                            </LinearLayout>
 
                         </androidx.cardview.widget.CardView>
 
@@ -275,29 +225,15 @@
                             android:layout_margin="10dp"
                             app:cardCornerRadius="10dp">
 
-                            <LinearLayout
-                                android:layout_width="wrap_content"
-                                android:layout_height="wrap_content"
-                                android:layout_margin="2dp"
-                                android:orientation="vertical">
-
-                                <TextView
-
-                                    android:layout_width="wrap_content"
-                                    android:layout_height="wrap_content"
-                                    android:layout_gravity="center"
-                                    android:layout_weight="1"
-                                    android:gravity="center"
-                                    android:text="TextView"
-                                    android:textSize="20sp" />
-
-                                <ImageView
-                                    android:layout_width="300dp"
-                                    android:layout_height="200dp"
-                                    android:layout_margin="5dp"
-                                    android:layout_weight="1"
-                                    app:srcCompat="@drawable/ferari" />
-                            </LinearLayout>
+                            <TextView
+                                android:id="@+id/bmw2_txt"
+                                android:layout_width="250dp"
+                                android:layout_height="200dp"
+                                android:layout_gravity="center"
+                                android:gravity="center"
+                                android:text="@string/bmw2"
+                                android:textSize="60sp"
+                                android:textStyle="bold" />
 
                         </androidx.cardview.widget.CardView>
 
@@ -307,29 +243,15 @@
                             android:layout_margin="10dp"
                             app:cardCornerRadius="10dp">
 
-                            <LinearLayout
-                                android:layout_width="wrap_content"
-                                android:layout_height="wrap_content"
-                                android:layout_margin="2dp"
-                                android:orientation="vertical">
-
-                                <TextView
-
-                                    android:layout_width="wrap_content"
-                                    android:layout_height="wrap_content"
-                                    android:layout_gravity="center"
-                                    android:layout_weight="1"
-                                    android:gravity="center"
-                                    android:text="TextView"
-                                    android:textSize="20sp" />
-
-                                <ImageView
-                                    android:layout_width="300dp"
-                                    android:layout_height="200dp"
-                                    android:layout_margin="5dp"
-                                    android:layout_weight="1"
-                                    app:srcCompat="@drawable/ferari" />
-                            </LinearLayout>
+                            <TextView
+                                android:id="@+id/bmw3_txt"
+                                android:layout_width="250dp"
+                                android:layout_height="200dp"
+                                android:layout_gravity="center"
+                                android:gravity="center"
+                                android:text="@string/bmw3"
+                                android:textSize="60sp"
+                                android:textStyle="bold" />
 
                         </androidx.cardview.widget.CardView>
                     </LinearLayout>
@@ -356,25 +278,26 @@
                         android:layout_gravity="center"
                         android:layout_weight="1"
                         android:gravity="center"
-                        android:text="@string/audi"
+                        android:text="@string/audi_main"
                         android:textSize="20sp" />
 
                     <ImageView
-                        android:id="@+id/img3333"
+                        android:id="@+id/audiMain"
                         android:layout_width="wrap_content"
-                        android:layout_height="200dp"
+                        android:layout_height="150dp"
                         android:layout_margin="5dp"
                         android:layout_weight="1"
                         app:srcCompat="@drawable/audi" />
                 </LinearLayout>
 
             </androidx.cardview.widget.CardView>
-            <LinearLayout
-                android:animateLayoutChanges="true"
-                android:id="@+id/linner3333"
 
+            <LinearLayout
+                android:id="@+id/linner3333"
                 android:layout_width="wrap_content"
+
                 android:layout_height="wrap_content"
+                android:animateLayoutChanges="true"
                 android:orientation="horizontal"
                 android:visibility="gone">
 
@@ -394,29 +317,15 @@
                             android:layout_margin="10dp"
                             app:cardCornerRadius="10dp">
 
-                            <LinearLayout
-                                android:layout_width="wrap_content"
-                                android:layout_height="wrap_content"
-                                android:layout_margin="2dp"
-                                android:orientation="vertical">
-
-                                <TextView
-
-                                    android:layout_width="wrap_content"
-                                    android:layout_height="wrap_content"
-                                    android:layout_gravity="center"
-                                    android:layout_weight="1"
-                                    android:gravity="center"
-                                    android:text="TextView"
-                                    android:textSize="20sp" />
-
-                                <ImageView
-                                    android:layout_width="300dp"
-                                    android:layout_height="200dp"
-                                    android:layout_margin="5dp"
-                                    android:layout_weight="1"
-                                    app:srcCompat="@drawable/ferari" />
-                            </LinearLayout>
+                            <TextView
+                                android:id="@+id/audi1_txt"
+                                android:layout_width="250dp"
+                                android:layout_height="200dp"
+                                android:layout_gravity="center"
+                                android:gravity="center"
+                                android:text="@string/audi1"
+                                android:textSize="60sp"
+                                android:textStyle="bold" />
 
                         </androidx.cardview.widget.CardView>
 
@@ -426,30 +335,15 @@
                             android:layout_margin="10dp"
                             app:cardCornerRadius="10dp">
 
-                            <LinearLayout
-                                android:layout_width="wrap_content"
-                                android:layout_height="wrap_content"
-                                android:layout_margin="2dp"
-                                android:orientation="vertical">
-
-                                <TextView
-
-                                    android:layout_width="wrap_content"
-                                    android:layout_height="wrap_content"
-                                    android:layout_gravity="center"
-                                    android:layout_weight="1"
-                                    android:gravity="center"
-                                    android:text="TextView"
-                                    android:textSize="20sp" />
-
-                                <ImageView
-                                    android:layout_width="300dp"
-                                    android:layout_height="200dp"
-                                    android:layout_margin="5dp"
-                                    android:layout_weight="1"
-                                    app:srcCompat="@drawable/ferari" />
-                            </LinearLayout>
-
+                            <TextView
+                                android:id="@+id/audi2_txt"
+                                android:layout_width="250dp"
+                                android:layout_height="200dp"
+                                android:layout_gravity="center"
+                                android:gravity="center"
+                                android:text="@string/audi2"
+                                android:textSize="60sp"
+                                android:textStyle="bold" />
                         </androidx.cardview.widget.CardView>
 
                         <androidx.cardview.widget.CardView
@@ -458,29 +352,15 @@
                             android:layout_margin="10dp"
                             app:cardCornerRadius="10dp">
 
-                            <LinearLayout
-                                android:layout_width="wrap_content"
-                                android:layout_height="wrap_content"
-                                android:layout_margin="2dp"
-                                android:orientation="vertical">
-
-                                <TextView
-
-                                    android:layout_width="wrap_content"
-                                    android:layout_height="wrap_content"
-                                    android:layout_gravity="center"
-                                    android:layout_weight="1"
-                                    android:gravity="center"
-                                    android:text="TextView"
-                                    android:textSize="20sp" />
-
-                                <ImageView
-                                    android:layout_width="300dp"
-                                    android:layout_height="200dp"
-                                    android:layout_margin="5dp"
-                                    android:layout_weight="1"
-                                    app:srcCompat="@drawable/ferari" />
-                            </LinearLayout>
+                            <TextView
+                                android:id="@+id/audi3_txt"
+                                android:layout_width="250dp"
+                                android:layout_height="200dp"
+                                android:layout_gravity="center"
+                                android:gravity="center"
+                                android:text="@string/audi3"
+                                android:textSize="60sp"
+                                android:textStyle="bold" />
 
                         </androidx.cardview.widget.CardView>
                     </LinearLayout>
@@ -491,10 +371,7 @@
         </LinearLayout>
 
 
-
     </ScrollView>
-
-
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>
